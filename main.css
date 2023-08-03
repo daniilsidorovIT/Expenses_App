@@ -1,0 +1,160 @@
+.body{
+  font-family: 'Oswald';
+  
+}
+@import url(popup.css);
+
+html {
+  font-family: 'Oswald';
+  background-color: #bfaf8c;
+}
+
+.body__fixed{
+  overflow: hidden;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
+.main {
+  width: 1050px;
+  margin: 0 auto;
+  margin-top: 100px;
+  
+}
+
+.main__header {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+  margin-bottom: 32px;
+  font-family: 'Oswald';
+  
+}
+
+.main__form {
+  margin-bottom: 60px;
+}
+
+.main__form__input {
+  font-size: 32px;
+  line-height: 38px;
+  border: 1px solid black;
+  font-family: 'Oswald';
+  width: 484px;
+  padding: 10px 0;
+  padding-left: 22px;
+  margin-bottom: 18px;
+  border-radius: 15px;
+}
+
+.main__form__add-btn {
+  font-size: 32px;
+  line-height: 38px;
+
+  padding: 10px 110px;
+  border: none;
+  border-radius: 15px;
+
+  background-color: #2a967f;
+  color: #fff;
+}
+
+.main__form__select {
+  display: block;
+  border: 1px solid black;
+  font-family: 'Oswald';
+  font-size: 32px;
+  line-height: 38px;
+  padding: 10px 0;
+  padding-left: 22px;
+  width: 484px;
+  border-radius: 15px;
+
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.main__form__select {
+  padding-right: 1.2em;
+  background-repeat: no-repeat;
+  background-position: calc(100% - 0.25em) 50%;
+  background-size: 22px 15px;
+  background-image: url(./resourse/arrow.png);
+}
+
+.main__info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main__info__heading {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38px;
+  margin-bottom: 13px;
+  font-family: 'Oswald';
+}
+
+.main__limit {
+  display: flex;
+}
+
+.popup__open-icon {
+  width: 42px;
+  height: 42px;
+
+  margin-left: 12px;
+
+  cursor: pointer;
+}
+
+.main__info__sum {
+  margin-bottom: 35px;
+}
+
+.main__history {
+  margin-right: 351px;
+  font-family: 'Oswald';
+}
+
+.history_exspenses {
+  font-size: 32px;
+  line-height: 38px;
+  font-family: 'Oswald';
+  white-space: nowrap;
+}
+
+.main__description {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 38px;
+
+  white-space: nowrap;
+}
+
+.status_green {
+  color: green;
+}
+
+.status_red {
+  color: red;
+}
+
+.main__reset-btn {
+  font-size: 32px;
+  line-height: 38px;
+  color: white;
+  background-color: #b53333;
+  font-family: 'Oswald';
+  padding: 11px 100px;
+  margin-top: 112px;
+  border: none;
+  border-radius: 15px;
+}

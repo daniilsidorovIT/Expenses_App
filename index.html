@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Расходы</title>
+    <link rel="shortcut icon" href="/resourse/favicon_expenses.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+    <main class="main">
+      
+        <h1 class="main__header">Учёт расходов</h1>
+        <form class="main__form">
+          <input class="js-exspense-input main__form__input" type="number" />
+          <button class="js-button-add main__form__add-btn">Добавить</button>
+          <select class="js-category main__form__select">
+            <option value="0">Транспорт</option>
+            <option value="1">Кафе и рестораны</option>
+            <option value="2">Аптека</option>
+            <option value="3">Развлечения</option>
+          </select>
+        </form>
+        <section class="main__info">
+          <div>
+            <div class="main__limit">
+              <p class="main__info__heading">
+                Лимит: <span class="js-limit main__description"></span> руб.
+              </p>
+              <img src="./resourse/popup_open_icon.png" alt="иконка открытия окна для изменения лимита" class="js-popup-open popup__open-icon">
+            </div>
+            <p class="main__info__heading main__info__sum">
+              Сумма: <span class="js-sum-exspenses main__description"></span> руб.
+            </p>
+            <p class="main__info__heading">
+              Статус:
+              <span class="js-status status_green main__description"
+                >всё хорошо</span
+              >
+            </p>
+            <button class="js-reset-button main__reset-btn">
+              Сбросить расходы
+            </button>
+          </div>
+          <div>
+            <h2 class="main__info__heading main__history">История:</h2>
+            <ol class="history_exspenses js-history"></ol>
+          </div>
+        </section>
+        <div class="js-popup popup">
+          <div class="popup__content">
+            <div class="popup__content__row">
+              <p class="popup__content__heading">Новый лимит</p>
+              <img src="./resourse/popup_close_icon.png" alt="иконка закрытия всплывающего окна" class="js-popup-close popup__close-icon">
+            </div>
+            <input type="number" class="js-popup-input popup__content__input">
+            <button class="js-popup-change-limit popup__content__button">Задать лимит</button>
+          </div>
+        </div>
+      </main>
+      <script src="index.js"></script>
+      <script src="popup.js"></script>
+
+    </body>
+</html>
+
+<body>
+  
+</body>
